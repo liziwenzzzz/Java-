@@ -54,7 +54,7 @@ public class Helper {
 
 	// ºöÂÔ´óÐ¡Ð´
 	public void countWord() {
-		Pattern p = Pattern.compile("\\b\\w+.?\\b", Pattern.CASE_INSENSITIVE);
+		Pattern p = Pattern.compile("\\b([a-zA-Z'-]+)[:,.!?]?\\b", Pattern.CASE_INSENSITIVE);
 		Matcher m = p.matcher(content);
 		while (m.find()) {
 			String t = m.group();
@@ -80,7 +80,7 @@ public class Helper {
 
 	public static void main(String[] args) throws IOException {
 		Helper it = new Helper();
-		it.getFileContent("C:\\Users\\10201\\Desktop\\te.txt");
+		it.getFileContent("D:\\Eclipse\\Java-practice\\four\\te.txt");
 		it.countLetter();
 		it.showLetterCount();
 

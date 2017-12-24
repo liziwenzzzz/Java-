@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Test {
 	public static void main(String[] args) throws IOException {
-		System.out.println("input the path of file:");
+		System.out.println("input the absolute path of file:");
 		String path = new Scanner(System.in).nextLine();
 		Helper it = new Helper();
 		it.getFileContent(path);
@@ -30,6 +30,5 @@ public class Test {
 				return;
 			}
 		}
-
 	}
 }
